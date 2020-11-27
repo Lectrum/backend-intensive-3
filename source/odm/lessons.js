@@ -1,6 +1,6 @@
 // Core
 import mongoose from 'mongoose';
-import v4 from 'uuid/v4';
+import { v4 } from 'uuid';
 
 const contentSchema = new mongoose.Schema(
     {

@@ -1,15 +1,15 @@
 // Core
 import mongoose from 'mongoose';
-import v4 from 'uuid/v4';
+import { v4 } from 'uuid';
 
 // Instruments
-import { users, lessons } from './';
+import { students, lessons } from './';
 
 const studentSchema = new mongoose.Schema(
     {
         user: {
             type: mongoose.SchemaTypes.ObjectId,
-            ref:  users,
+            ref:  students,
         },
         status: {
             type: String,
